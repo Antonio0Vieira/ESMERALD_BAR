@@ -1,0 +1,48 @@
+
+<html>
+<head>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            margin: auto;
+        }
+
+        input, textarea {
+            margin: 10px;
+            width: 80%;
+        }
+
+        input[type=submit] {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+
+        .link1{
+	       background: #1d1a1a;
+	       padding: 5px;
+	       text-align: center;
+           color: rgb(255, 255, 255);
+           background: rgb(2, 85, 13);
+           border:2px solid #000000;
+	       border-radius: 5px;
+           text-decoration: none;
+		   width: 84;
+           font-family: fantasy;
+		   height: 25;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="envio_dados.php">
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
+        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+        <textarea name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+        <a class="link1" href="https://www.gov.br/receitafederal/pt-br">ENVIAR</a>
+    </form>
+</body>
+</html>
